@@ -11,7 +11,7 @@ if (n < 0 || n > 15)
 return;
 while (e <= n)
 {
-for (e = 0; f <= n; f++)
+for (f = 0; f <= n; f++)
 {
 rep = e * f;
 if (f == 0)
