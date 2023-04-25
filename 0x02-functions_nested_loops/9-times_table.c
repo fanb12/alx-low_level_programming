@@ -1,0 +1,48 @@
+#include "main.h"
+/**
+  * times_table - Entry point
+  *
+  * Return: 0
+  */
+void times_table(void)
+{
+int e;
+int f;
+int g;
+for (e = 0; e <= 9; e++)
+{
+for (f = 0; f <= 9; f++)
+{
+g = e * f;
+if ((g / 10) == 0)
+{
+if (f == 0)
+{
+_putchar('0');
+}
+if (f != 0)
+{
+_putchar(' ');
+_putchar((g % 10) + '0');
+}
+if (f < 9)
+{
+_putchar(',');
+_putchar(' ');
+}
+}
+else
+{
+_putchar((g / 10) + '0');
+_putchar((g % 10) + '0');
+if (f < 9)
+{
+_putchar(',');
+_putchar(' ');
+}
+}
+}
+_putchar('\n');
+}
+}
+
